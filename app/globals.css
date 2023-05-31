@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Jost:wght@200;300;400&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -25,3 +27,362 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+/* NAVBAR */
+
+.navHover::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: gray;
+
+  position: absolute;
+  top: -16px;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+.navHover:hover::before {
+  width: 100%;
+}
+
+@media screen and (max-width: 1060px) {
+  nav ul {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+  }
+
+  nav ul.active {
+    height: 320px;
+  }
+
+  .navHover:hover::before {
+    width: 0;
+  }
+
+  nav li {
+    margin-bottom: 19px;
+  }
+}
+
+/* NAVBAR */
+
+/* KITTEN PREVIEW */
+
+.kittenGrid {
+  display: grid;
+  gap: 2rem 3rem;
+  grid-template-columns: repeat(4, 1fr);
+  padding-block: 2rem;
+  width: min(100%, 1600px);
+  margin-inline: auto;
+  overflow: visible;
+}
+
+.kittenCell:hover .imageOverlay{
+  height: 100%;
+}
+
+.kittenCell {
+  transition: transform 0.2s;
+}
+
+.kittenCell:hover {
+  transform: scale(1.03);
+}
+
+@media screen and (max-width: 1300px) {
+  .kittenGrid {
+      grid-template-columns: repeat(2, 1fr);
+      width: min(100%, 1000px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .kittenGrid {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* KITTEN PREVIEW */
+
+/* IMAGE MODAL */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent img {
+  max-height: 90vh;
+  max-width: 800px;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  border: 5px solid #E8E3DD;
+}
+
+.prevButton {
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nextButton {
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.imageIndex {
+  color: white;
+  position: absolute;
+  top: -30px;
+}
+
+.closeButton {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.cursorP:hover {
+  cursor: pointer;
+}
+
+.gridContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ageGroup {
+  margin-top: 50px;
+  margin-bottom: -20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .grid {
+      grid-template-columns: repeat(2, 1fr);
+      width: min(100%, 1000px);
+  }
+
+  .kittenImage {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .kittenImage {
+    width: 500px;
+  }
+
+  .birthdate {
+    font-size: 25px;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .kittenImage {
+    width: 350px;
+  }
+
+  .birthdate {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .modalContent {
+    flex-direction: column;
+  }
+  
+  .prevButton, .nextButton, .closeButton {
+    margin-top: 10px;
+    position: static;
+    top: auto;
+    bottom: auto;
+    transform: none;
+  }
+
+  .mobile {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .grid {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* IMAGE MODAL */
+
+/* IMPORTANT INFO */
+
+.options {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 30px
+}
+
+.options a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  background-color: #232323;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 80px 0;
+  text-align: center;
+  width: 260px;
+  height: 200px;
+  font-size: 25px;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.options a:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 885px) {
+  .options {
+    justify-content: space-around;
+    margin: 0;
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .options {
+    flex-direction: column;
+  }
+
+  .options a {
+    margin: 20px;
+  }
+}
+
+/* IMPORTANT INFO */
+
+/* POLICY */
+
+.reserveHero {
+  background-color: #232323;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reserveHero h1 {
+  color: white;
+  margin-top: 65px;
+}
+
+@media screen and (max-width: 895px){
+  .reserveHero h1 {
+    margin-top: 85px;
+  }
+}
+
+.policyContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.policyText {
+  max-width: 800px;
+  margin: 30px;
+  font-size: 20px;
+}
+
+.indent {
+  margin-left: 38px;
+}
+
+.policyText li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/* POLICY */
+
+/* EXPENSIVE */
+
+.expensiveContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.expensiveText {
+  max-width: 800px;
+  margin: 30px;
+  font-size: 20px;
+}
+
+.expensiveText p:not(:last-child):not(:nth-child(4)) {
+  margin-bottom: 20px;
+}
+
+.expensiveText ul > li {
+  margin-bottom: 15px;
+}
+
+.expensiveText p {
+  text-indent: 20px;
+}
+
+/* EXPENSIVE */

@@ -7,10 +7,28 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: "#E8E3DD",
+        secondary: "#232323",
+        whitesmoke: "#F5F5F5",
+      },
+
+      fontFamily: {
+        'dancing': ['"Dancing Script"', 'sans-serif'],
+        'jost': ['"Jost"', 'sans-serif'],
+      },
+
+      screens: {
+        xs: "480px",
+        ss: "620px",
+        sm: "768px",
+        md: "1060px",
+        lg: "1200px",
+        xl: "1700px",
+      },
+
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'homepageCat': "url('../public/Kings/Yossi/Yossi15.jpg')",
       },
     },
   },
