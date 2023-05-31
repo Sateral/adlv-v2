@@ -5,7 +5,7 @@ import Yossi from '../public/Kings/Yossi/Yossi15.jpg'
 import Irina from '@/public/assets/Irina.jpg'
 
 import Preview from '@/components/kittensPreview'
-import Contact from '@/components/contact'
+import Contact from '@/components/Contact.jsx'
 
 export default function Home() {
   return (
