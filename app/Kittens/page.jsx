@@ -144,7 +144,7 @@ const page = () => {
         <div className="modal">
           <div className="modalContent">
           {/* isLoading && */}
-            {isLoading && <h1 className='absolute left-[50%] translate-x-[-50%] font-jost text-[2rem] bg-secondary p-5 rounded-lg'>Loading...</h1>}
+            {isLoading && <h1 className='absolute left-[50%] translate-x-[-50%] font-jost text-[2rem] bg-secondary p-5 rounded-lg text-primary'>Loading...</h1>}
             <Image
               src={Litters[currentObjectIndex][1].kittens[currentKittenIndex].images[currentImageIndex]}
               className={`kittenImage ${isLoading ? 'opacity-0' : 'opacity-100'}`}
