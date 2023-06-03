@@ -134,6 +134,10 @@ const page = () => {
               </div>
             ))}
           </div>
+          
+          <div className='flex justify-center items-center p-4'>
+            <h1 className='bg-secondary text-primary p-4 rounded-lg font-jost text-2xl'>Click on a kitten to view their gallery</h1>
+          </div>
         </div>
       </div>
       {modalOpen && (

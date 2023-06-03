@@ -13,12 +13,10 @@ const KittensPreview = () => {
     console.log('Selected index:', litterIndex);
   };
 
-  
-
   return (
-    <div className='h-full w-full bg-secondary border-bottom-[4px] text-primary p-[20px]'>
-      <div>
-        <h1 className='text-[24px] font-jost'>Viewing Kittens</h1>
+    <div className='flex justify-center items-center h-full w-full bg-secondary border-bottom-[4px] text-primary p-[20px]'>
+      <div className='w-[1430px]'>
+        <h1 className='text-[24px] font-jost'>Viewing Kittens Preview</h1>
         <p className='inline text-[20px]'>British Shorthair Litter</p>
         <select className='inline ml-[10px] w-[60px] h-[30px] border-none rounded-[5px] bg-gray-600 text-[20px] text-primary' onChange={handleLitterChange}>
           {Litters.map((litter) => (

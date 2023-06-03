@@ -1,11 +1,12 @@
-import Link from 'next/link'
-import Image from 'next/image'
+import Link from 'next/link';
 
-import Yossi from '../public/Kings/Yossi/Yossi15.jpg'
-import Irina from '@/public/assets/Irina.jpg'
 
-import Preview from '@/components/kittensPreview'
-import Contact from '@/components/Contact.jsx'
+import Yossi from '../public/Kings/Yossi/Yossi15.jpg';
+import Irina from '@/public/assets/Irina.jpg';
+
+import Preview from '@/components/kittensPreview';
+import Contact from '@/components/Contact.jsx';
+import ScrollArrow from '@/components/ScrollArrow';
 
 export default function Home() {
   return (
@@ -40,18 +41,20 @@ export default function Home() {
           </div>
 
           <div>
-            <Image src={Irina} alt='Irina of Aurore de la Vie' className='w-full rounded-2xl' style={{boxShadow: '0 0 0 3px #232323, 25px 25px 0px -10px #E8E3DD, -20px -20px 0px -10px #E8E3DD, -20px -20px 0px #232323, 25px 25px 0px -1px #232323'}}/>
+            <img src={Irina.src} alt='Irina of Aurore de la Vie' className='w-full rounded-2xl' style={{boxShadow: '0 0 0 3px #232323, 25px 25px 0px -10px #E8E3DD, -20px -20px 0px -10px #E8E3DD, -20px -20px 0px #232323, 25px 25px 0px -1px #232323'}}/>
           </div>
         </div>
       </section>
 
-      <section>
+      <section className='flex justify-center items-center'>
         <Preview />
       </section>
 
       <section>
         <Contact />
       </section>
+      
+      <ScrollArrow />
     </main>
-  )
+  );
 };
