@@ -18,7 +18,7 @@ function ScrollArrow() {
   }, []);
 
   return (
-    <div className={`scroll-arrow ${showScroll ? '' : 'hide'}`}>
+    <div className={`text-white flex flex-col fixed bottom-5 left-[50%] translate-x-[-50%] items-center justify-center cursor-default text-[25px] ml-[-46px] scroll-arrow ${showScroll ? '' : 'hide'}`}>
       <span>View more</span>
       <FontAwesomeIcon icon={faChevronDown} className="arrow-icon" />
     </div>

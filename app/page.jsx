@@ -16,9 +16,15 @@ export default function Home() {
           <div className='h-[75vh] w-full m-0 p-0 flex justify-center items-center'>
             <div className='w-full h-full flex justify-center items-center flex-col'>
               <div className='text-whitesmoke font-jost'>
-                <h2 className='md:text-[22px] sm:text-[18px] text-[22px]'>Welcome to</h2>
-                <h1 className='font-dancing md:text-[80px] sm:text-[65px] xs:text-[60px] text-[40px]'>Aurore de la Vie</h1>
+                <h1>
+                  <span className='md:text-[22px] sm:text-[18px] text-[22px]'>Welcome to</span>
+                  <br></br>
+                  <span className='font-dancing md:text-[80px] sm:text-[65px] xs:text-[60px] text-[40px]'>Aurore de la Vie</span>
+                </h1>
                 <h3 className='text-right md:text-[22px] sm:text-[18px] text-[22px]'>Cattery</h3>
+                {/* <h2 className='md:text-[22px] sm:text-[18px] text-[22px]'>Welcome to</h2>
+                <h1 className='font-dancing md:text-[80px] sm:text-[65px] xs:text-[60px] text-[40px]'>Aurore de la Vie</h1>
+                <h3 className='text-right md:text-[22px] sm:text-[18px] text-[22px]'>Cattery</h3> */}
               </div>
             </div>
           </div>

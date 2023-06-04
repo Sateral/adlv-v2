@@ -29,7 +29,7 @@ const Contact = () => {
 
   return (
     <div className="h-full w-full bg-secondary text-whitesmoke text-[20px] p-[20px] border-t-4">
-      <h1 className='text-center px-[50px] pb-[30px] font-jost text-[36px] font-semibold'>Contact Us!</h1>
+      <h2 className='text-center px-[50px] pb-[30px] font-jost text-[36px] font-semibold'>Contact Us!</h2>
       <form id="survey-form" onSubmit={sendEmail}>
         <fieldset className="w-full max-w-[800px] m-auto border-none">
           <input type="hidden" name="_captcha" value="false" />

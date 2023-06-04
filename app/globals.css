@@ -390,22 +390,9 @@ body {
 /* SCROLL ARROW */
 
 .scroll-arrow {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   opacity: 1;
   transition: opacity 0.3s ease;
-  cursor: default;
   animation: jump 1s infinite alternate;
-  font-size: 25px;
-  margin-left: -46px;
 }
 
 @keyframes jump {

@@ -100,9 +100,9 @@ const Page = () => {
           </div>
           <div className="flex-2/3 text-center md:order-2">
             <div className="text-box inline-block text-left bg-[#eeeae6] p-[30px] rounded-2xl">
-              <h1 className="font-dancing md:text-[3.5rem] text-[3rem] font-semibold">
+              <h2 className="font-dancing md:text-[3.5rem] text-[3rem] font-semibold">
                 Aurore de la Vie {king.name}
-              </h1>
+              </h2>
               <hr className="h-[5px] w-full border-0 bg-[#c2b8ac]" />
               <div className="pt-[20px] text-[1.1rem]">
                 <p>
@@ -130,7 +130,7 @@ const Page = () => {
         <div className="modal">
           <div className="modalContent">
           {/* isLoading && */}
-            {isLoading && <h1 className='absolute left-[50%] translate-x-[-50%] font-jost text-[2rem] bg-secondary p-5 rounded-lg'>Loading...</h1>}
+            {isLoading && <h2 className='absolute left-[50%] translate-x-[-50%] font-jost text-[2rem] bg-secondary p-5 rounded-lg'>Loading...</h2>}
             <Image
               src={kingsList[currentObjectIndex].images[currentImageIndex]}
               className={`kittenImage ${isLoading ? 'opacity-0' : 'opacity-100'}`}

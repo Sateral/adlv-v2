@@ -89,7 +89,7 @@ const page = () => {
       <Hero pageTitle="Kittens" sub="of Aurore de la Vie" image={Cat} />
       <div className='h-full w-full bg-primary border-bottom-[4px] text-secondary'>
         <div>
-          <h1 className='text-[24px] font-jost pt-4 px-4'>Viewing Kittens</h1>
+          <h2 className='text-[24px] font-jost pt-4 px-4'>Viewing Kittens</h2>
           <p className='inline text-[20px] px-4'>British Shorthair Litter</p>
           <select className='inline ml-[10px] w-[60px] h-[30px] border-none rounded-[5px] bg-secondary text-[20px] text-primary' onChange={handleLitterChange}>
             {Litters.map((litter) => (
@@ -100,14 +100,14 @@ const page = () => {
           <div className='flex flex-col justify-center items-center my-[20px] p-[20px] bg-[#1b1b1b] text-primary'>
             <div className="flex flex-row justify-center items-center gap-[5vw]">
               <div className="text-center">
-                <h1 className='text-[24px]'>{Litters[litterIndex][1].parents?.[0]?.parent}</h1>
+                <h2 className='text-[24px]'>{Litters[litterIndex][1].parents?.[0]?.parent}</h2>
                 <div className='max-w-[600px] mb-4'>
                   <Image src={Litters[litterIndex][1].parents?.[0]?.image} alt="Mother Cat" className='w-full rounded-t-lg mb-[-6px]' />
                   <p className='bg-primary text-secondary text-base text-center p-[2px] rounded-b-lg w-full'>Aurore de la Vie <br/> {Litters[litterIndex][1].parents[0].name}</p>
                 </div>
               </div>
               <div className="text-center">
-                <h1 className='text-[24px]'>{Litters[litterIndex][1].parents?.[1]?.parent}</h1>
+                <h2 className='text-[24px]'>{Litters[litterIndex][1].parents?.[1]?.parent}</h2>
                 <div className='max-w-[600px] mb-4'>
                   <Image src={Litters[litterIndex][1].parents?.[1]?.image} alt="Father Cat" className='w-full rounded-t-lg mb-[-6px]' />
                   <p className='bg-primary text-secondary text-base text-center p-[2px] rounded-b-lg w-full'>Aurore de la Vie <br/> {Litters[litterIndex][1].parents[1].name}</p>
@@ -136,7 +136,7 @@ const page = () => {
           </div>
           
           <div className='flex justify-center items-center p-4'>
-            <h1 className='bg-secondary text-primary p-4 rounded-lg font-jost text-2xl'>Click on a kitten to view their gallery</h1>
+            <h2 className='bg-secondary text-primary p-4 rounded-lg font-jost text-2xl'>Click on a kitten to view their gallery</h2>
           </div>
         </div>
       </div>
@@ -144,7 +144,7 @@ const page = () => {
         <div className="modal">
           <div className="modalContent">
           {/* isLoading && */}
-            {isLoading && <h1 className='absolute left-[50%] translate-x-[-50%] font-jost text-[2rem] bg-secondary p-5 rounded-lg text-primary'>Loading...</h1>}
+            {isLoading && <h2 className='absolute left-[50%] translate-x-[-50%] font-jost text-[2rem] bg-secondary p-5 rounded-lg text-primary'>Loading...</h2>}
             <Image
               src={Litters[currentObjectIndex][1].kittens[currentKittenIndex].images[currentImageIndex]}
               className={`kittenImage ${isLoading ? 'opacity-0' : 'opacity-100'}`}
