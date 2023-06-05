@@ -56,7 +56,7 @@ const Contact = () => {
           <textarea id="questions" name="message" rows="3" cols="50" placeholder="Please enter any questions you have" className='block h-[100px] w-full rounded-[5px] border-none font-jost mt-[10px] p-[10px] text-secondary'></textarea>
           
           <div className='w-full flex justify-center items-center'>
-            <button className="bg-primary m-8 text-secondary py-2 px-6 rounded-lg font-jost hover:bg-[#141414] hover:text-primary transition duration-50 ease-out" type="submit">Submit</button>
+            <button className="bg-white m-8 text-secondary py-2 px-6 rounded-lg font-jost hover:bg-[#141414] hover:text-primary transition duration-50 ease-out" type="submit">Submit</button>
           </div>
         </fieldset>
       </form>

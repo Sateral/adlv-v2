@@ -16,7 +16,7 @@ const KittensPreview = () => {
   return (
     <div className='flex justify-center items-center h-full w-full bg-secondary border-bottom-[4px] text-primary p-[20px]'>
       <div className='w-[1430px]'>
-        <h2 className='text-[24px] font-jost'>Viewing Kittens Preview</h2>
+        <p className='text-[24px] font-jost'>Viewing Kittens Preview</p>
         <p className='inline text-[20px]'>British Shorthair Litter</p>
         <select className='inline ml-[10px] w-[60px] h-[30px] border-none rounded-[5px] bg-gray-600 text-[20px] text-primary' onChange={handleLitterChange}>
           {Litters.map((litter) => (
