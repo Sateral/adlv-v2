@@ -22,7 +22,7 @@ const Footer = () => {
         </h3>
         <h3 className='mb-1'>Georgetown, Halton Hills ON, Canada</h3>
         <h3 className='mb-1'>
-          <Link href="https://www.facebook.com/people/Aurore-de-la-Vie/100093337211666/" target='_blank'><Image src={Facebook} alt="Facebook" className='w-[18px] h-auto cursor-pointer'/></Link>
+          <Link href="https://www.facebook.com/people/Aurore-de-la-Vie/100093337211666/" target='_blank'><Image src={Facebook} alt="Facebook" className='w-[17px] h-auto cursor-pointer'/></Link>
         </h3>
       </div>
       <div className="footer-right">
