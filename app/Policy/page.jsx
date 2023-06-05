@@ -12,7 +12,7 @@ const page = () => {
         <div className='policyText'>
           <ol className='list-decimal'>
             <li>
-              Kittens can only be reserved after deposit is received by breeder. (Please click to see <Link href='/Reserve'>How to reserve</Link> page)
+              Kittens can only be reserved after deposit is received by breeder. (Please click to see <Link href='/reserve'>How to reserve</Link> page)
             </li>
             <li>
               The outstanding balance will be paid prior or at the latest on the date of delivery of the kitten to the purchaser.

@@ -4,27 +4,27 @@ export const navLinks = [
     title: "Home",
   },
   {
-    id: "AboutUs",
+    id: "about-us",
     title: "About Us",
   },
   {
-    id: "Queens",
+    id: "queens",
     title: "Queens",
   },
   {
-    id: "Kings",
+    id: "kings",
     title: "Kings",
   },
   {
-    id: "Kittens",
+    id: "kittens",
     title: "Kittens",
   },
   {
-    id: "ImportantInfo",
+    id: "important-info",
     title: "Important Info",
   },
   {
-    id: "Contact",
+    id: "contact",
     title: "Contact Us",
   },
 ]
