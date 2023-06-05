@@ -8,15 +8,15 @@ export const navLinks = [
     title: "About Us",
   },
   {
-    id: "queens",
+    id: "Queens",
     title: "Queens",
   },
   {
-    id: "kings",
+    id: "Kings",
     title: "Kings",
   },
   {
-    id: "kittens",
+    id: "Kittens",
     title: "Kittens",
   },
   {
@@ -24,7 +24,7 @@ export const navLinks = [
     title: "Important Info",
   },
   {
-    id: "contact",
+    id: "Contact",
     title: "Contact Us",
   },
 ]
