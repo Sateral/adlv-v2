@@ -6,8 +6,8 @@ const page = () => {
     <div>
       <Hero pageTitle="How to Reserve" sub="" image={null} />
 
-      <div className='relative bg-primary font-jost text-secondary'>
-        <div className='flex justify-center items-center flex-col mx-[40px]'>
+      <div className='flex justify-center items-center flex-col bg-primary font-jost text-secondary'>
+        <div className='mx-8'>
           <h2 className='text-center mt-[15px] text-[30px] font-semibold'>Reserving Kittens in Advance</h2>
           <p className='max-w-[1000px] my-[20px] mx-[40px] indent-[20px] text-[19px]'>
             We normally have a large waiting list for kittens. Going on the waiting list doesn't guarantee you a kitten but there are no  obligations and no deposit required to be on the waiting list. We contact people on our waiting list via email on the day we know that our queen is pregnant. You are very welcome to contact us any way you prefer and we will add your name and your contact information to our waiting list. Once the kittens are born it will be available to reserve one or more kittens from the litter.
@@ -16,7 +16,7 @@ const page = () => {
             To reserve a kitten, please describe a kitten you are interested in along with some information about you and any questions you may have. Kittens are reserved with a $400 non-refundable deposit paid either by person check, PayPal money transfer or cash.
           </p>
 
-          <hr className='w-full border-2 border-secondary rounded-lg' />
+          <hr className='border-2 border-secondary rounded-lg' />
 
           <h2 className='text-center mt-[15px] text-[30px] font-semibold'>Deposit</h2>
           <p className='max-w-[1000px] my-[20px] mx-[40px] indent-[20px] text-[19px]'>

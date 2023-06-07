@@ -27,7 +27,7 @@ const KittensPreview = () => {
           {Litters[litterIndex][1].kittens?.map((kitten, index) => (
             <div key={index}>
               <div className='relative kittenCell'>
-                <Image src={kitten.images[0]} alt={kitten.name} className='w-full block rounded-t-lg' />
+                <Image src={kitten.images[0]} alt={kitten.name} className='w-full h-auto block rounded-t-lg' />
                 <div className='absolute bg-black bottom-0 left-0 w-full h-0 flex justify-center items-center flex-col overflow-hidden rounded-[6px] bg-opacity-50 imageOverlay' style={{transition: 'height ease-in-out 250ms'}}>
                   <p>Sex: {kitten.sex}</p>
                   <p>Color: {kitten.color}</p>

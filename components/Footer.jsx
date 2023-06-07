@@ -5,7 +5,7 @@ import Facebook from '../public/facebook.svg'
 
 const Footer = () => {
   return (
-    <footer className='h-[20%] bg-secondary border-t-[3px] text-primary text-[12px] font-sans flex justify-around items-center flex-wrap'>
+    <footer className='h-lg bg-secondary border-t-[3px] text-primary text-[12px] font-sans flex justify-around items-center flex-wrap'>
       <div className="my-8">
         <ul>
           <li className='list-none'>
