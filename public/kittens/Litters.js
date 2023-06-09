@@ -46,7 +46,7 @@ const Litter_G = [
         name: 'Genie',
         sex: 'Male',
         color: 'Blue (BSH a)',
-        status: 'Available',
+        status: 'Reserved',
         images: [
           require('./Litter G/Genie/Genie-1.jpg'),
           require('./Litter G/Genie/Genie-2.jpg'),
@@ -64,7 +64,7 @@ const Litter_G = [
         name: 'Georgina',
         sex: 'Female',
         color: 'Blue (BSH a)',
-        status: 'Reserved',
+        status: 'Sold',
         images: [
           require('./Litter G/Georgina/Georgina-1.jpg'),
           require('./Litter G/Georgina/Georgina-2.jpg'),

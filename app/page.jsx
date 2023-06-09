@@ -31,7 +31,7 @@ export default function Home() {
 
           <div className='sm:h-[100vh] h-[25vh] sm:w-[80%] w-[100%]'>
             <div 
-            className='h-full w-full bg-cover bg-no-repeat opacity-60' 
+            className='h-full w-full bg-cover bg-no-repeat opacity-90' 
             style={{backgroundImage: `url(${Yossi.src})`, backgroundPosition: '38% center'}}></div>
           </div>
         </div>

@@ -13,7 +13,7 @@ const Hero = ({ pageTitle, sub, image }) => {
       </div>
       {image != null &&
       <div className="sm:h-full h-[50%] sm:w-[80%] w-full">
-        <div className="h-full w-full bg-cover bg-no-repeat opacity-60" style={{backgroundImage: `url(${image.src})`, backgroundPosition: '38% center'}}></div>
+        <div className="h-full w-full bg-cover bg-no-repeat opacity-90" style={{backgroundImage: `url(${image.src})`, backgroundPosition: '38% center'}}></div>
       </div>
       }
     </div>
