@@ -38,7 +38,7 @@ const KittensPreview = () => {
             </div>
           ))}
         </div>
-        <p className='text-center '><Link href="/kittens" className='underline text-blue-400 hover:text-blue-600 text-[22px]'>View More</Link></p>
+        <p className='text-center '><Link href="/Kittens" className='underline text-blue-400 hover:text-blue-600 text-[22px]'>View More</Link></p>
       </div>
     </div>
   );
