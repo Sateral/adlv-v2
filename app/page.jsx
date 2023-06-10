@@ -48,7 +48,7 @@ export default function Home() {
           </div>
 
           <div>
-            <img src={Irina.src} alt='Irina of Aurore de la Vie' className='xs:w-full w-[250px] h-auto rounded-2xl' style={{boxShadow: '0 0 0 3px #232323, 25px 25px 0px -10px #E8E3DD, -20px -20px 0px -10px #E8E3DD, -20px -20px 0px #232323, 25px 25px 0px -1px #232323'}}/>
+            <img src={Irina.src} alt='Irina of Aurore de la Vie' className='xs:w-[375px] w-[250px] h-auto rounded-2xl' style={{boxShadow: '0 0 0 3px #232323, 25px 25px 0px -10px #E8E3DD, -20px -20px 0px -10px #E8E3DD, -20px -20px 0px #232323, 25px 25px 0px -1px #232323'}}/>
           </div>
         </div>
       </section>
