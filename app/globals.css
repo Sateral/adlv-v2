@@ -201,12 +201,14 @@ body {
 
   .kittenImage {
     width: 800px;
+    height: auto;
   }
 }
 
 @media screen and (max-width: 930px) {
   .kittenImage {
     width: 500px;
+    height: auto;
   }
 
   .birthdate {
@@ -218,6 +220,7 @@ body {
 @media screen and (max-width: 625px) {
   .kittenImage {
     width: 350px;
+    height: auto;
   }
 
   .birthdate {

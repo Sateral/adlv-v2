@@ -2,7 +2,7 @@ import React from 'react'
 import Hero from '@/components/Hero'
 import Link from 'next/link'
 
-import Cat from '../../public/queens/Ursula/Ursula01.jpg'
+import Cat from '../../public/queens/Ursula/Ursula01.webp'
 
 const page = () => {
   return (

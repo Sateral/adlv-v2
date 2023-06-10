@@ -1,8 +1,8 @@
 import React from 'react'
 import Hero from '@/components/Hero'
 
-import Cat from '../../public/Kings/Yossi/Yossi04.jpg'
-import Yossi from '../../public/Kings/Yossi/Yossi13.jpg'
+import Cat from '../../public/Kings/Yossi/Yossi17.webp'
+import Yossi from '../../public/Kings/Yossi/Yossi13.webp'
 
 const page = () => {
   return (

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import Hero from '@/components/Hero';
 
-import Cat from '../../public/queens/Fiona/Fiona07.jpg';
+import Cat from '../../public/queens/Fiona/Fiona07.webp';
 import Contact from '@/components/Contact';
 
 const Page = () => {

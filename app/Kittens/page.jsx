@@ -7,7 +7,7 @@ import Hero from '@/components/Hero'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleChevronLeft, faCircleChevronRight, faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 
-import Cat from '../../public/Kings/Yossi/Yossi06.jpg';
+import Cat from '../../public/Kings/Yossi/Yossi06.webp';
 
 const page = () => {
   const [litterIndex, setLitterIndex] = useState(0);
@@ -102,14 +102,14 @@ const page = () => {
               <div className="text-center">
                 <h2 className='text-[24px]'>{Litters[litterIndex][1].parents?.[0]?.parent}</h2>
                 <div className='max-w-[600px] mb-4'>
-                  <Image src={Litters[litterIndex][1].parents?.[0]?.image} alt="Mother Cat" className='w-full rounded-t-lg mb-[-6px]' />
+                  <Image src={Litters[litterIndex][1].parents?.[0]?.image} alt="Mother Cat" className='w-[500px] h-auto rounded-t-lg mb-[-6px]' />
                   <p className='bg-primary text-secondary text-base text-center p-[2px] rounded-b-lg w-full'>Aurore de la Vie <br/> {Litters[litterIndex][1].parents[0].name}</p>
                 </div>
               </div>
               <div className="text-center">
                 <h2 className='text-[24px]'>{Litters[litterIndex][1].parents?.[1]?.parent}</h2>
                 <div className='max-w-[600px] mb-4'>
-                  <Image src={Litters[litterIndex][1].parents?.[1]?.image} alt="Father Cat" className='w-full rounded-t-lg mb-[-6px]' />
+                  <Image src={Litters[litterIndex][1].parents?.[1]?.image} alt="Father Cat" className='w-[500px] h-auto rounded-t-lg mb-[-6px]' />
                   <p className='bg-primary text-secondary text-base text-center p-[2px] rounded-b-lg w-full'>Aurore de la Vie <br/> {Litters[litterIndex][1].parents[1].name}</p>
                 </div>
               </div>
@@ -123,7 +123,7 @@ const page = () => {
             {Litters[litterIndex][1].kittens?.map((kitten, index) => (
               <div key={index}>
                 <div className='relative kittenCell cursor-pointer' onClick={() => handleOpenModal(litterIndex, index, 0)}>
-                  <Image src={kitten.images[0]} alt={kitten.name} className='w-full block rounded-t-lg' />
+                  <Image src={kitten.images[0]} alt={kitten.name} className='w-full h-auto block rounded-t-lg' />
                   <div className='absolute bg-black bottom-0 left-0 w-full h-0 flex justify-center items-center flex-col overflow-hidden rounded-[6px] bg-opacity-50 text-primary imageOverlay' style={{transition: 'height ease-in-out 250ms'}}>
                     <p>Sex: {kitten.sex}</p>
                     <p>Color: {kitten.color}</p>
@@ -147,7 +147,7 @@ const page = () => {
             {isLoading && <h2 className='absolute left-[50%] translate-x-[-50%] font-jost text-[2rem] bg-secondary p-5 rounded-lg text-primary'>Loading...</h2>}
             <Image
               src={Litters[currentObjectIndex][1].kittens[currentKittenIndex].images[currentImageIndex]}
-              className={`kittenImage ${isLoading ? 'opacity-0' : 'opacity-100'}`}
+              className={`kittenImage  ${isLoading ? 'opacity-0' : 'opacity-100'}`}
               alt="Cat"
               onLoad={() => setIsLoading(false)}
             />

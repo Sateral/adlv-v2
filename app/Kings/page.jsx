@@ -8,7 +8,7 @@ import { faCircleChevronLeft, faCircleChevronRight, faCircleXmark } from '@forta
 
 import Image from 'next/image';
 
-import Cat from '../../public/Kings/Yossi/Yossi04.jpg';
+import Cat from '../../public/Kings/Yossi/Yossi04.webp';
 
 const Page = () => {
   const [modalOpen, setModalOpen] = useState(false);
