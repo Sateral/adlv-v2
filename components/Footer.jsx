@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="my-8">
         <ul>
           <li className='list-none'>
-            <Link href="/contact" className='no-underline'>
+            <Link href="/Contact" className='no-underline'>
               <h2 className='underline mb-1'>Find Us</h2>
             </Link>
           </li>
