@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar.jsx'
 import Footer from '../components/Footer.jsx'
 
 export const metadata = {
-  title: 'Aurore de la Vie',
+  title: 'Aurore de la Vie, British Shorthair Cattery',
   description: 'British Shorthair Cattery',
 }
 
