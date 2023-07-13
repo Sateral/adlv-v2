@@ -144,17 +144,17 @@ const page = () => {
             <div className='bg-black bg-opacity-40 fixed bottom-0 left-0 w-full md:gap-32 gap-16 flex justify-center items-center p-2 text-3xl'>
               <FontAwesomeIcon
                 icon={faCircleChevronLeft}
-                className="cursor-pointer"
+                className="cursor-pointer text-primary"
                 onClick={handlePrev}
               />
               <FontAwesomeIcon
                 icon={faCircleXmark}
-                className="cursor-pointer"
+                className="cursor-pointer text-primary"
                 onClick={handleCloseModal}
               />
               <FontAwesomeIcon
                 icon={faCircleChevronRight}
-                className="cursor-pointer"
+                className="cursor-pointer text-primary"
                 onClick={handleNext}
               />
             </div>
