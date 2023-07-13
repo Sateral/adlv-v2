@@ -128,7 +128,7 @@ const page = () => {
         <div className="fixed top-0 left-0 z-[9999] bg-black bg-opacity-80 w-full h-full">
           <div className="">
           {/* isLoading && */}
-            {isLoading && <h2 className='absolute left-[50%] translate-x-[-50%] font-jost text-[2rem] bg-secondary p-5 rounded-lg'>Loading...</h2>}
+            {isLoading && <h2 className='absolute left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] font-jost text-[2rem] bg-secondary p-5 rounded-lg'>Loading...</h2>}
 
             <Image
               src={queensList[currentObjectIndex].images[currentImageIndex]}
