@@ -141,23 +141,38 @@ const page = () => {
         </div>
       </div>
       {modalOpen && (
-        <div className="modal">
-          <div className="modalContent">
+        <div className="fixed top-0 left-0 z-[9999] bg-black bg-opacity-80 w-full h-full">
+          <div className="">
           {/* isLoading && */}
             {isLoading && <h2 className='absolute left-[50%] translate-x-[-50%] font-jost text-[2rem] bg-secondary p-5 rounded-lg text-primary'>Loading...</h2>}
+
             <Image
               src={Litters[currentObjectIndex][1].kittens[currentKittenIndex].images[currentImageIndex]}
-              className={`kittenImage  ${isLoading ? 'opacity-0' : 'opacity-100'}`}
+              className={`absolute top-[47.5%] left-[50%] translate-x-[-50%] translate-y-[-50%] sm:max-w-[750px] max-w-[95%] max-h-[90%] object-contain  ${isLoading ? 'opacity-0' : 'opacity-100'}`}
               alt="Cat"
               onLoad={() => setIsLoading(false)}
             />
-            <div className="imageIndex">
+
+            <div className="absolute top-2 right-2 text-xl">
               {currentImageIndex + 1}/{Litters[currentObjectIndex][1].kittens[currentKittenIndex].images.length}
             </div>
-            <div className="mobile">
-              <FontAwesomeIcon icon={faCircleChevronLeft} className="prevButton" onClick={handlePrev} />
-              <FontAwesomeIcon icon={faCircleXmark} className="closeButton" onClick={handleCloseModal} />
-              <FontAwesomeIcon icon={faCircleChevronRight} className="nextButton" onClick={handleNext} />
+            
+            <div className='bg-black bg-opacity-40 fixed bottom-0 left-0 w-full md:gap-32 gap-16 flex justify-center items-center p-2 text-3xl'>
+              <FontAwesomeIcon
+                icon={faCircleChevronLeft}
+                className="cursor-pointer"
+                onClick={handlePrev}
+              />
+              <FontAwesomeIcon
+                icon={faCircleXmark}
+                className="cursor-pointer"
+                onClick={handleCloseModal}
+              />
+              <FontAwesomeIcon
+                icon={faCircleChevronRight}
+                className="cursor-pointer"
+                onClick={handleNext}
+              />
             </div>
           </div>
         </div>

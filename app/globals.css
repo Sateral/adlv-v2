@@ -117,30 +117,11 @@ body {
   height: 100%;
   z-index: 9999;
   background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.modalContent {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.modalContent img {
-  max-height: 90vh;
-  max-width: 800px;
-  margin: 0;
-  padding: 0;
-  border-radius: 10px;
-  border: 5px solid #E8E3DD;
 }
 
 .prevButton {
   position: absolute;
-  left: -50px;
+  left: 450px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
@@ -151,7 +132,7 @@ body {
 
 .nextButton {
   position: absolute;
-  right: -50px;
+  right: 450px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
@@ -160,15 +141,9 @@ body {
   cursor: pointer;
 }
 
-.imageIndex {
-  color: white;
-  position: absolute;
-  top: -30px;
-}
-
 .closeButton {
   position: absolute;
-  bottom: -50px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -177,14 +152,15 @@ body {
   cursor: pointer;
 }
 
-.cursorP:hover {
-  cursor: pointer;
+.imageIndex {
+  color: white;
+  position: relative;
+  top: 0px;
 }
 
-.gridContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.isZoomed {
+  transform: scale(2) translate(-25%, -25%);
+  cursor: zoom-out;
 }
 
 .ageGroup {
@@ -198,53 +174,12 @@ body {
       grid-template-columns: repeat(2, 1fr);
       width: min(100%, 1000px);
   }
-
-  .kittenImage {
-    width: 800px;
-    height: auto;
-  }
-}
-
-@media screen and (max-width: 930px) {
-  .kittenImage {
-    width: 500px;
-    height: auto;
-  }
-
-  .birthdate {
-    font-size: 25px;
-    margin-top: 40px;
-  }
 }
 
 @media screen and (max-width: 625px) {
-  .kittenImage {
-    width: 350px;
-    height: auto;
-  }
-
   .birthdate {
     font-size: 20px;
     margin-top: 40px;
-  }
-}
-
-@media screen and (max-width: 490px) {
-  .modalContent {
-    flex-direction: column;
-  }
-  
-  .prevButton, .nextButton, .closeButton {
-    margin-top: 10px;
-    position: static;
-    top: auto;
-    bottom: auto;
-    transform: none;
-  }
-
-  .mobile {
-    display: flex;
-    gap: 30px;
   }
 }
 
